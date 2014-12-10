@@ -4,8 +4,10 @@
 #
 #
 
+HERE := `pwd`
 # base directory for containing the ESP8266_SDK
 ESPRESSIF_BASE ?= /home/matthewf/werk/Linksys/git-repos/
+# ESPRESSIF_BASE ?= $(HERE)/../..
 
 # base directory of the ESP8266 SDK package, absolute
 SDK_BASE	?= $(ESPRESSIF_BASE)/mf_ESP8266_SDK

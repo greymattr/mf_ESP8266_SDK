@@ -6,19 +6,23 @@
 # This make file still needs some work.
 #
 #
+
+HERE := `pwd`
+# base directory for containing the ESP8266_SDK
+ESPRESSIF_BASE ?= /home/matthewf/werk/Linksys/git-repos/
+# ESPRESSIF_BASE ?= $(HERE)/../..
+
+# base directory of the ESP8266 SDK package, absolute
+SDK_BASE	?= $(ESPRESSIF_BASE)/mf_ESP8266_SDK
+
+# base directory containing the toolchain
+XTENSA_TOOLS_ROOT ?= /home/matthewf/bin/Espressif/crosstool-NG/builds/xtensa-lx106-elf/bin
+
+
 # Output directors to store intermediate compiled files
 # relative to the project directory
 BUILD_BASE	= build
 FW_BASE		= firmware
-
-ESPRESSIF_BASE ?= /home/matthewf/bin/Espressif
-
-# Base directory for the compiler
-# XTENSA_TOOLS_ROOT ?= /opt/Espressif/crosstool-NG/builds/xtensa-lx106-elf/bin
-XTENSA_TOOLS_ROOT ?= $(ESPRESSIF_BASE)/crosstool-NG/builds/xtensa-lx106-elf/bin
-
-# base directory of the ESP8266 SDK package, absolute
-SDK_BASE	?= $(ESPRESSIF_BASE)/ESP8266_SDK
 
 #Esptool.py path and port
 ESPTOOL		?= esptool.py
