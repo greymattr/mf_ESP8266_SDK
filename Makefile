@@ -5,7 +5,7 @@ ifndef PDIR
 endif
 
 AR = xtensa-lx106-elf-ar
-CC = xtensa-lx106-elf-xcc
+CC = xtensa-lx106-elf-cc
 NM = xtensa-lx106-elf-nm
 CPP = xtensa-lx106-elf-cpp
 OBJCPY = xtensa-lx106-elf-objcopy
