@@ -19,12 +19,11 @@ Sample Programs:
   IoT_Demo - The Internet of things Demo application
   
 Building the Examples:
-  1. Copy the example application folder to the top level mf_ESP8266_SDK folder.
-  # cd mf_ESP8266_SDK/
-  # cp -a exmaples/blinky .
-
-  2. cd to the sample application folder and edit the Makefile to reflect your toolchain directory, and build directoy
-  3. type 'make' to build the sample application
+Copy the example application folder to the top level mf_ESP8266_SDK folder.
+  1. 2. cd mf_ESP8266_SDK/
+  2. cp -a exmaples/blinky .
+  3. cd to the sample application folder and edit the Makefile to reflect your toolchain directory, and build directoy
+  4. type 'make' to build the sample application
   
 
 
